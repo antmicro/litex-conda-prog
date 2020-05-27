@@ -8,37 +8,13 @@ addons:
 
 jobs:
   include:
-   # Libraries
-   - stage: "Libraries"
-     env:
-     - PACKAGE=lib/usb
-
-   - stage: "Libraries"
-     env:
-     - PACKAGE=lib/ftdi
-
-   # Programming Tools
    - stage: "Programming Tools"
+     os: linux
+     dist: xenial
      env:
-     - PACKAGE=prog/iceprog
-
+     - PACKAGE=prog/dfu-util
    - stage: "Programming Tools"
-     env:
-     - PACKAGE=prog/icefunprog
-
-   - stage: "Programming Tools"
-     env:
-     - PACKAGE=prog/openocd
-
-   - stage: "Programming Tools"
-     env:
-     - PACKAGE=prog/flterm
-
-   - stage: "Programming Tools"
-     env:
-     - PACKAGE=prog/fxload
-
-   - stage: "Programming Tools"
+     os: windows
      env:
      - PACKAGE=prog/dfu-util
 
