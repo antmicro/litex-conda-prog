@@ -19,8 +19,9 @@ build:
 
 requirements:
   build:
+    - m2-base   [win]
     - {{ compiler('c') }}
-    - pkg-config
+    - pkg-config   [not win]
   host:
     - libusb
   run:
