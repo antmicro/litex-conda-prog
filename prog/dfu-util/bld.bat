@@ -1,9 +1,7 @@
 @echo on
 
 set GCC_ARCH=x86_64-w64-mingw32
-set CC=%GCC_ARCH%-gcc
-set CXX=%GCC_ARCH%-g++
-set LDFLAGS=-static
+set CC=%GCC_ARCH%-gcc -static
 
 REM Prepare pkg-config for libusb and make sure PKG_CONFIG_PATH is correct
 md %BUILD_PREFIX%\Library\lib\pkgconfig
