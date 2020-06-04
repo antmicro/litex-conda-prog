@@ -1,5 +1,5 @@
 prefix=/opt/anaconda1anaconda2anaconda3
-exec_prefix=${prefix}/Library
+exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
