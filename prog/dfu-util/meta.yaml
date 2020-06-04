@@ -27,6 +27,7 @@ requirements:
     - m2-automake-wrapper  [win]
     - m2-autoconf          [win]
     - m2-pkg-config        [win]
+    - libusb               [win]
   host:
     - libusb
   run:
