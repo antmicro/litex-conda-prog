@@ -1,0 +1,3 @@
+[submodule "litex-conda-ci"]
+	path = .travis
+	url = https://github.com/antmicro/litex-conda-ci.git
