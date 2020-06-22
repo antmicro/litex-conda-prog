@@ -98,6 +98,12 @@ jobs:
      env:
      - PACKAGE=prog/flterm
 
+   - stage: "Programming Tools"
+     os: osx
+     osx_image: xcode8.3
+     env:
+     - PACKAGE=prog/fxload
+
    # Windows
    - stage: "Programming Tools"
      os: windows
