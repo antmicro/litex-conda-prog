@@ -9,106 +9,106 @@ addons:
 jobs:
   fast_finish: true
   include:
-   # Libraries
-   - stage: "Libraries"
-     env:
-     - PACKAGE=lib/usb
+   # # Libraries
+   # - stage: "Libraries"
+   #   env:
+   #   - PACKAGE=lib/usb
 
-   - stage: "Libraries"
-     env:
-     - PACKAGE=lib/ftdi
+   # - stage: "Libraries"
+   #   env:
+   #   - PACKAGE=lib/ftdi
 
-   # OSX
-   - stage: "Libraries"
+   # # OSX
+   # - stage: "Libraries"
+   #   os: osx
+   #   osx_image: xcode8.3
+   #   env:
+   #   - PACKAGE=lib/usb
+
+   # - stage: "Libraries"
+   #   os: osx
+   #   osx_image: xcode8.3
+   #   env:
+   #   - PACKAGE=lib/ftdi
+
+   # # Windows
+   # - stage: "Libraries"
+   #   os: windows
+   #   env:
+   #   - PACKAGE=lib/usb
+
+   # - stage: "Libraries"
+   #   os: windows
+   #   env:
+   #   - PACKAGE=lib/ftdi
+
+   # # Programming Tools
+   # - stage: "Programming Tools"
+   #   env:
+   #   - PACKAGE=prog/iceprog
+
+   # - stage: "Programming Tools"
+   #   env:
+   #   - PACKAGE=prog/icefunprog
+
+   # - stage: "Programming Tools"
+   #   env:
+   #   - PACKAGE=prog/openocd
+
+   # - stage: "Programming Tools"
+   #   env:
+   #   - PACKAGE=prog/flterm
+
+   # - stage: "Programming Tools"
+   #   env:
+   #   - PACKAGE=prog/fxload
+
+   # - stage: "Programming Tools"
+   #   env:
+   #   - PACKAGE=prog/dfu-util
+
+   # # OSX
+   # - stage: "Programming Tools"
+   #   os: osx
+   #   osx_image: xcode8.3
+   #   env:
+   #   - PACKAGE=prog/iceprog
+
+   # - stage: "Programming Tools"
+   #   os: osx
+   #   osx_image: xcode8.3
+   #   env:
+   #   - PACKAGE=prog/icefunprog
+
+   # - stage: "Programming Tools"
+   #   os: osx
+   #   osx_image: xcode8.3
+   #   env:
+   #   - PACKAGE=prog/dfu-util
+
+   # - stage: "Programming Tools"
+   #   os: osx
+   #   osx_image: xcode8.3
+   #   env:
+   #   - PACKAGE=prog/openocd
+
+   # - stage: "Programming Tools"
+   #   os: osx
+   #   osx_image: xcode8.3
+   #   env:
+   #   - PACKAGE=prog/flterm
+
+   - stage: "Programming Tools"
      os: osx
      osx_image: xcode8.3
-     env:
-     - PACKAGE=lib/usb
-
-   - stage: "Libraries"
-     os: osx
-     osx_image: xcode8.3
-     env:
-     - PACKAGE=lib/ftdi
-
-   # Windows
-   - stage: "Libraries"
-     os: windows
-     env:
-     - PACKAGE=lib/usb
-
-   - stage: "Libraries"
-     os: windows
-     env:
-     - PACKAGE=lib/ftdi
-
-   # Programming Tools
-   - stage: "Programming Tools"
-     env:
-     - PACKAGE=prog/iceprog
-
-   - stage: "Programming Tools"
-     env:
-     - PACKAGE=prog/icefunprog
-
-   - stage: "Programming Tools"
-     env:
-     - PACKAGE=prog/openocd
-
-   - stage: "Programming Tools"
-     env:
-     - PACKAGE=prog/flterm
-
-   - stage: "Programming Tools"
      env:
      - PACKAGE=prog/fxload
 
-   - stage: "Programming Tools"
-     env:
-     - PACKAGE=prog/dfu-util
-
-   # OSX
-   - stage: "Programming Tools"
-     os: osx
-     osx_image: xcode8.3
-     env:
-     - PACKAGE=prog/iceprog
-
-   - stage: "Programming Tools"
-     os: osx
-     osx_image: xcode8.3
-     env:
-     - PACKAGE=prog/icefunprog
-
-   - stage: "Programming Tools"
-     os: osx
-     osx_image: xcode8.3
-     env:
-     - PACKAGE=prog/dfu-util
-
-   - stage: "Programming Tools"
-     os: osx
-     osx_image: xcode8.3
-     env:
-     - PACKAGE=prog/openocd
-
-   - stage: "Programming Tools"
-     os: osx
-     osx_image: xcode8.3
-     env:
-     - PACKAGE=prog/flterm
-
-   - stage: "Programming Tools"
-     os: osx
-     osx_image: xcode8.3
-     env:
-     - PACKAGE=prog/fxload
-
    # Windows
-   - stage: "Programming Tools"
-     os: windows
-     env:
-     - PACKAGE=prog/iceprog
+   # - stage: "Programming Tools"
+   #   os: windows
+   #   env:
+   #   - PACKAGE=prog/iceprog
 
 before_install:
  - source $TRAVIS_BUILD_DIR/.travis/common.sh
