@@ -17,6 +17,10 @@ jobs:
    - stage: "Libraries"
      env:
      - PACKAGE=lib/ftdi
+     
+   - stage: "Libraries"
+     env:
+     - PACKAGE=lib/isl
 
    # OSX
    - stage: "Libraries"
